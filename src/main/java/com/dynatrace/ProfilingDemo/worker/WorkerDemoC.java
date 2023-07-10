@@ -17,6 +17,7 @@ public class WorkerDemoC extends Worker {
 		
 		synchronized (user1) {
 			user1.addPoints(calculatedReward);
+			// deadlock happening here, because of job 1 & 4
 			// move this lock outside of the other synchronized block to fix the problem
 			synchronized (user2) {
 				user2.addPoints(calculatedReward);

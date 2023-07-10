@@ -25,6 +25,7 @@ public class WorkerDemoB extends Worker {
 
 	private long calculateReward(int n) {
 		// Problem: Negative rewards will never exit this method
+		// Fix by changing to n <=1
 		if (n == 0 || n == 1) {
 			return n;
 		}

@@ -19,6 +19,7 @@ public class User {
 
 	public void addPoints(long addedPoints) {
 		try {
+			// adding some artifical delay to make the deadlock more likely
 			Thread.sleep(500);
 		} catch (InterruptedException e) {
 			e.printStackTrace();

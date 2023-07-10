@@ -5,7 +5,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 
 @SpringBootApplication
-@ServletComponentScan 
+@ServletComponentScan
+/**
+ * A simple spring boot application with a servlet that showcases different
+ * cpu & threadproblems which can easily be diagnosed with Dyntrace OneAgent
+ */
 public class ProfilingDemoApplication {
 
 	public static void main(String[] args) {
